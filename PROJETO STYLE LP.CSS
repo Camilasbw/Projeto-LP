@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+body {
+    background-image: linear-gradient(to top, white, black 450px); /*decrade na imagem */
+    font-family: Arial, sans-serif; /*fonte da pagina */
+    margin: 0; /* margem para preencher a tela */
+    color: rgb(255, 255, 255); /* coloração das letras */
+}
+html{
+    height: 100%; /* colorção */
+}
+
+/* menu inicial*/
+.cabeca{
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 1px;
+    height: auto;
+    width: auto;
+    color: black;
+}
+ /* config texto */
+header{
+    color: white;
+    font-size: 9px;
+}
+header nav{
+    background-color: rgb(55, 54, 54);
+    height: 25px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 160px;
+}
+
+/*Desing do botão */
+
+.botao-container {
+    display: flex;
+    gap: 10px;
+}
+.botao {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* borda do botao*/
+}
+.botao.sim {
+    background-color: red;
+}
+
+.botao.sim:hover {
+    background-color: darkred;
+}
+
+.meninicio{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.meninicioo{
+    text-align: center;
+    color: rgb(97, 97, 97);
+}
+
+/*Desing das imagens*/
+
+.menu {
+    text-align: center; /* Alinha a imagem no centro*/
+    padding: 5px 0; /* Alinha a fileira das imagens*/
+}
+.menu ul {
+    padding: 0;
+}
+.menu li {
+    display: inline-block; /* alinha as imagens na horizontal */
+    margin: 0 5px; /* espaçamento entre as imagens */
+}
+.menu a {
+    display: block; /* Ajusta a imagem */
+    width: 90px; /* Ajuste o tamanho da imagem */
+    height: 90px; /* Ajuste o tamanho da imagem */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* aplica a Borda da imagem */
+}
+.menu a:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+.menu img {
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem se ajuste ao tamanho da telinha */
+}
+.text {
+    font-size: 0.5em; /* tamanho da fonte */
+    text-align: center; /* centraliza o texto */
+    margin-top: 1%; /* Espaço entre a imagem e o texto */
+    color:white; /* Cor do texto */
+    background: none;
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    display: inline-block; /* Faz com que o texto se ajuste ao tamanho necessário */
+}
+ 
+/* Caixa de Formulario */
+
+main{ /* alinha o formulario no meio da pagina */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    margin-top: 50px;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(193, 0, 0);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    width: 225px;
+    margin: 0 auto;
+}
+button:hover {
+    background-color: darkred;
+}
+
+.container {
+    background-color: black;
+    padding: 15px; /* Ajuste o preenchimento */
+    border-radius: 10px; /* ajusta a borda do formulario */
+    box-shadow: 0 0 10px darkred (255, 0, 0, 0.5);
+    width: 510px; /* Largura do formulario */
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro da caixa */
+    margin-top: 20px;
+}
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+label {
+    width: 100px;
+    font-size: 12px; /* Tamanho da fonte reduzido */
+}
+input {
+    padding: 5px; /* Preenchimento reduzido */
+    width: 400px; /* Botão ocupa toda a largura da caixa */
+    margin-left: 5px; /* Espaço entre rótulo e campo reduzido */
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-size: 12px; /* Tamanho da fonte reduzido */
+    height: 7px;
+}
+
+/* Base de informação site */
+
+.foot{
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 10px;
+}
+.register{
+    background-color: rgb(193, 1, 1);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    height: auto;
+    width: auto;
+}
